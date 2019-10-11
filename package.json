@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server --output-public-path=/build/"
+    "start": "webpack-dev-server --output-public-path=/build/",
+    "json:server": "json-server --watch api/db.json"
   },
   "author": "Krisztian Holub",
   "license": "ISC",
@@ -19,5 +20,8 @@
     "webpack": "^4.41.1",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {
+    "json-server": "^0.15.1"
   }
 }
